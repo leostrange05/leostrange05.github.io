@@ -1,0 +1,89 @@
+site_name: Leo's Blog
+site_url: https://leostrange05.github.io/
+
+nav:
+  - 🏠 Home: index.md
+  - Architecture:
+    - home: Tab1/index.md
+    - page: Tab1/page-1.md
+    - another page:
+      - subpage: Tab1/new/page-3.md
+  - Software Development:
+    - Page1: TAB2/page-1.md
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: lime
+      toggle:
+        icon: material/brightness-3
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+  font:
+    text: Ubuntu
+    code: Jetbrains Mono
+  language: zh
+  icon:
+    logo: material/clippy
+    annotation: material/arrow-right-circle-outline
+    
+  favicon: 
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.annotate
+
+plugins:
+  - search
+
+markdown_extensions:  # admonition
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+                     
+  - attr_list         # annotation
+  - md_in_html
+  - pymdownx.superfences
+
+  - attr_list         # button
+
+  - pymdownx.highlight: # code block
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  - pymdownx.superfences # content tab
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - tables            # table
+
+  - attr_list         # icon emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - attr_list          # image
+  - md_in_html
+  - pymdownx.blocks.caption
