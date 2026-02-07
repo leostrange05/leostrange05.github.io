@@ -1,0 +1,37 @@
+/* Solarized 颜色定义 */
+:root {
+  --sol-base03:  #002b36;
+  --sol-base02:  #073642;
+  --sol-base01:  #586e75;
+  --sol-base00:  #657b83;
+  --sol-base0:   #839496;
+  --sol-base1:   #93a1a1;
+  --sol-base2:   #eee8d5;
+  --sol-base3:   #fdf6e3;
+  --sol-yellow:  #b58900;
+  --sol-orange:  #cb4b16;
+  --sol-red:     #dc322f;
+  --sol-magenta: #d33682;
+  --sol-violet:  #6c71c4;
+  --sol-blue:    #268bd2;
+  --sol-cyan:    #2aa198;
+  --sol-green:   #859900;
+}
+
+/* --- Solarized Light (浅色模式) --- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--sol-blue);
+  --md-primary-bg-color:        var(--sol-base3);
+  --md-primary-bg-color--light: var(--sol-base2);
+  
+  --md-default-bg-color:        var(--sol-base3);
+  --md-default-fg-color:        var(--sol-base00);
+  --md-default-fg-color--light: var(--sol-base01);
+  
+  --md-typeset-color:           var(--sol-base00);
+  --md-typeset-a-color:         var(--sol-blue);
+  
+  /* 代码块 */
+  --md-code-bg-color:           var(--sol-base2);
+  --md-code-fg-color:           var(--sol-base00);
+}
