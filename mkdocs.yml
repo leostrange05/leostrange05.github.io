@@ -3,31 +3,32 @@ site_url: https://leostrange05.github.io/
 
 nav:
   - 🏠 Home: index.md
-  - Architecture:
+  - Branch one:
     - home: Tab1/index.md
     - page: Tab1/page-1.md
     - another page:
       - subpage: Tab1/new/page-3.md
-  - Software Development:
+  - Branch two:
     - Page1: TAB2/page-1.md
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
     # Palette toggle for dark mode
     - scheme: slate
       primary: blue grey
       accent: lime
       toggle:
         icon: material/brightness-3
-        name: Switch to light mode
-    # Palette toggle for light mode
-    - scheme: default
-      primary: indigo
-      accent: pink
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
+        name: 切换至浅色模式
 
   font:
     text: Ubuntu
@@ -39,7 +40,7 @@ theme:
     
   favicon: 
   features:
-    - navigation.instant
+    # - navigation.instant
     - navigation.tabs
     - navigation.tracking
     - navigation.sections
@@ -53,6 +54,7 @@ theme:
 
 plugins:
   - search
+  - macros
 
 markdown_extensions:  # admonition
   - admonition
@@ -87,3 +89,6 @@ markdown_extensions:  # admonition
   - attr_list          # image
   - md_in_html
   - pymdownx.blocks.caption
+
+extra_css:
+  - stylesheets/extra.css
