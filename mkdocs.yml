@@ -13,6 +13,8 @@ nav:
   
   - 关于本站: diary.md
 
+  - 临时测试: test260212.md
+
 theme:
   name: material
   custom_dir: overrides
