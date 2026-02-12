@@ -10,6 +10,8 @@ nav:
       - subpage: Tab1/new/page-3.md
   - Branch two:
     - Page1: TAB2/page-1.md
+  
+  - 关于本站: diary.md
 
 theme:
   name: material
@@ -54,8 +56,9 @@ theme:
 
 plugins:
   - search
-  - macros
-
+  - macros:
+      module_name: main  # This points to your main.py
+      
 markdown_extensions:  # admonition
   - admonition
   - pymdownx.details
@@ -92,3 +95,15 @@ markdown_extensions:  # admonition
 
 extra_css:
   - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/leostrange05
+      name: GitHub
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/32313515/leostrange
+      name: Stack Overflow
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0009-0003-4712-4764)
+      name: ORCID
