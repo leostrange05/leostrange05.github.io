@@ -35,3 +35,49 @@
   --md-code-bg-color:           var(--sol-base2);
   --md-code-fg-color:           var(--sol-base00);
 }
+
+/* Timeline Styles */
+/* Timeline Container */
+.update-timeline {
+    border-left: 2px solid var(--md-primary-fg-color--light);
+    margin-left: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Timeline Item */
+.update-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* The Dot on the line */
+.update-item::before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--md-primary-fg-color);
+    border-radius: 50%;
+    border: 2px solid var(--md-default-bg-color);
+}
+
+.update-date {
+    font-size: 0.75rem;
+    color: var(--md-default-fg-color--light);
+    display: block;
+}
+
+.update-link {
+    font-weight: bold;
+    color: var(--md-default-fg-color);
+    text-decoration: none;
+}
+
+.update-link:hover {
+    color: var(--md-primary-fg-color);
+}
+/* end of Timeline Styles */
+
