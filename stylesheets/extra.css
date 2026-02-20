@@ -20,8 +20,8 @@
 
 /* --- Solarized Light (浅色模式) --- */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        var(--sol-blue);
-  --md-primary-bg-color:        var(--sol-base3);
+  --md-primary-fg-color:        var(--sol-base02);
+  --md-primary-bg-color:        var(--sol-base2);
   --md-primary-bg-color--light: var(--sol-base2);
   
   --md-default-bg-color:        var(--sol-base3);
@@ -80,4 +80,3 @@
     color: var(--md-primary-fg-color);
 }
 /* end of Timeline Styles */
-
