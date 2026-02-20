@@ -123,3 +123,30 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
     This is a warning message.
 
+!!! warning "This is a warning"
+
+    This is a warning message.
+
+??? info "This is an info"
+
+    This is an info message.
+
+!!! success
+
+    This is a success message.
+
+!!! question "This is a question"
+
+    This is a question message.
+
+???+ failure "This is a failure"
+
+    This is a failure message.
+
+!!! bug
+
+    This is a bug message.
+
+!!! example "This is an example"
+
+    This is an example message.

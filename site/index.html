@@ -116,8 +116,8 @@
       .flap-label {
         font-family: 'Ubuntu Mono', monospace;
         font-size: 0.5rem;       /* Size of the title */
-        color: #25d802;           /* Title Color */
-        text-shadow: #27c93f 0px 0px 5px;
+        color: #00ff00;           /* Title Color */
+        text-shadow: #00ff00 0px 0px 5px;
         letter-spacing: 0.5px;
         font-weight: bold;
         text-transform: uppercase;
@@ -165,6 +165,79 @@
           right: 20px;
           scale: 0.8;
         }
+      }
+
+      /* --- UPDATED BOOKMARK STYLES --- */
+
+      /* 1. Hero Section Container */
+      .home-hero {
+          position: relative;
+          padding-bottom: 0;
+          overflow: visible;
+      }
+
+      /* 2. Container Position (Unchanged) */
+      .hero-nav-bookmark {
+          position: absolute;
+          bottom: -1px; 
+          left: 18%;
+          transform: translateX(-50%);
+          z-index: 2;
+          pointer-events: none;
+      }
+
+      .bookmark-trapezoid {
+          display: flex;
+          flex-direction: row; /* Horizontal layout */
+          align-items: center;
+          justify-content: center;
+          gap: 10px; /* Space between dot and text */
+          
+          /* Keep all your existing size/shape/color properties below */
+          width: 200px;
+          height: 32px;
+          background-color: var(--md-primary-fg-color);
+          clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+          box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+          border-top: 3px solid rgba(255,255,255,0.2);
+          background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color));
+          position: relative;
+      }
+
+      /* The Dot (Now using ::before to appear on the left) */
+      .bookmark-trapezoid::before {
+          content: "";
+          width: 8px;
+          height: 6px;
+          background: #00ff00;
+          border-radius: 3px;
+          box-shadow: 0 0 12px #00ff00, 0 0 4px white;
+          animation: blinker 2s linear infinite;
+          flex-shrink: 0; /* Prevents dot from squishing */
+      }
+
+      .bookmark-trapezoid::after { display: none; }
+
+      /* 4. The Label (Now inside the trapezoid) */
+      .bookmark-label {
+          font-family: 'Ubuntu', monospace;
+          font-size: 0.65rem; /* Slightly smaller to fit comfortably */
+          font-weight: bold;
+          color: #ffffff; /* High contrast for inside the dark tab */
+          letter-spacing: 0em;
+          margin-top: -2px; /* Slight offset to account for trapezoid slope */
+          opacity: 1;
+      }
+
+      @keyframes blinker {
+        50% { opacity: 0.2; box-shadow: 0 0 2px #00ff00; }
+      }
+
+      /* Responsive adjustment */
+      @media screen and (max-width: 76.25em) {
+          .hero-nav-bookmark {
+              display: none;
+          }
       }
 
       /* ... (Remaining Terminal & Indicator styles from previous prompt) ... */
@@ -336,7 +409,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏠 Home
+              🏠 主页
             
           </span>
         </div>
@@ -447,7 +520,7 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <div class="terminal-title">bash</div>
+            <div class="terminal-title"></div>
           </div>
           <div class="terminal-body">
             <h1 class="hero-title shell-prompt">
@@ -462,6 +535,15 @@
             <div class="arrow"></div>
         </div>
       </div>
+
+      <!-- The Trapezoid Bookmark -->
+      <div class="hero-nav-bookmark">
+        <div class="bookmark-trapezoid">
+          <span class="bookmark-label">Explore & Navigate</span>
+          <!-- The dot is created via CSS ::after -->
+        </div>
+      </div>
+
     </section>
   
 
@@ -487,7 +569,7 @@
   
     
   
-  🏠 Home
+  🏠 主页
 
       </a>
     </li>
@@ -609,7 +691,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 Home
+    🏠 主页
   
 
     
@@ -627,7 +709,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 Home
+    🏠 主页
   
 
     
@@ -1052,7 +1134,7 @@
 
 
 
-  <h1>🏠 Home</h1>
+  <h1>🏠 主页</h1>
 
 <div class="grid cards">
 <ul>
@@ -1092,7 +1174,7 @@
 <div class="update-timeline">
 
                 <div class="update-item">
-                    <span class="update-date">2026-02-12</span>
+                    <span class="update-date">2026-02-13</span>
                     <a class="update-link" href="https://leostrange05.github.io/diary/">本站志</a>
                 </div>
 
@@ -1225,6 +1307,32 @@
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+        
+          
+          <a href="Tab1/" class="md-footer__link md-footer__link--next" aria-label="下一页: home">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                home
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1279,7 +1387,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.top", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>

@@ -25,7 +25,7 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <div class="terminal-title">bash</div>
+            <div class="terminal-title"></div>
           </div>
           <div class="terminal-body">
             <h1 class="hero-title shell-prompt">
@@ -40,6 +40,15 @@
             <div class="arrow"></div>
         </div>
       </div>
+
+      <!-- The Trapezoid Bookmark -->
+      <div class="hero-nav-bookmark">
+        <div class="bookmark-trapezoid">
+          <span class="bookmark-label">Explore & Navigate</span>
+          <!-- The dot is created via CSS ::after -->
+        </div>
+      </div>
+
     </section>
   {% endif %}
 {% endblock %}
@@ -98,8 +107,8 @@
       .flap-label {
         font-family: 'Ubuntu Mono', monospace;
         font-size: 0.5rem;       /* Size of the title */
-        color: #25d802;           /* Title Color */
-        text-shadow: #27c93f 0px 0px 5px;
+        color: #00ff00;           /* Title Color */
+        text-shadow: #00ff00 0px 0px 5px;
         letter-spacing: 0.5px;
         font-weight: bold;
         text-transform: uppercase;
@@ -147,6 +156,79 @@
           right: 20px;
           scale: 0.8;
         }
+      }
+
+      /* --- UPDATED BOOKMARK STYLES --- */
+
+      /* 1. Hero Section Container */
+      .home-hero {
+          position: relative;
+          padding-bottom: 0;
+          overflow: visible;
+      }
+
+      /* 2. Container Position (Unchanged) */
+      .hero-nav-bookmark {
+          position: absolute;
+          bottom: -1px; 
+          left: 18%;
+          transform: translateX(-50%);
+          z-index: 2;
+          pointer-events: none;
+      }
+
+      .bookmark-trapezoid {
+          display: flex;
+          flex-direction: row; /* Horizontal layout */
+          align-items: center;
+          justify-content: center;
+          gap: 10px; /* Space between dot and text */
+          
+          /* Keep all your existing size/shape/color properties below */
+          width: 200px;
+          height: 32px;
+          background-color: var(--md-primary-fg-color);
+          clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+          box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+          border-top: 3px solid rgba(255,255,255,0.2);
+          background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color));
+          position: relative;
+      }
+
+      /* The Dot (Now using ::before to appear on the left) */
+      .bookmark-trapezoid::before {
+          content: "";
+          width: 8px;
+          height: 6px;
+          background: #00ff00;
+          border-radius: 3px;
+          box-shadow: 0 0 12px #00ff00, 0 0 4px white;
+          animation: blinker 2s linear infinite;
+          flex-shrink: 0; /* Prevents dot from squishing */
+      }
+
+      .bookmark-trapezoid::after { display: none; }
+
+      /* 4. The Label (Now inside the trapezoid) */
+      .bookmark-label {
+          font-family: 'Ubuntu', monospace;
+          font-size: 0.65rem; /* Slightly smaller to fit comfortably */
+          font-weight: bold;
+          color: #ffffff; /* High contrast for inside the dark tab */
+          letter-spacing: 0em;
+          margin-top: -2px; /* Slight offset to account for trapezoid slope */
+          opacity: 1;
+      }
+
+      @keyframes blinker {
+        50% { opacity: 0.2; box-shadow: 0 0 2px #00ff00; }
+      }
+
+      /* Responsive adjustment */
+      @media screen and (max-width: 76.25em) {
+          .hero-nav-bookmark {
+              display: none;
+          }
       }
 
       /* ... (Remaining Terminal & Indicator styles from previous prompt) ... */

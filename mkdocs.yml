@@ -2,7 +2,7 @@ site_name: Leo's Blog
 site_url: https://leostrange05.github.io/
 
 nav:
-  - 🏠 Home: index.md
+  - 🏠 主页: index.md
   - Branch one:
     - home: Tab1/index.md
     - page: Tab1/page-1.md
@@ -48,6 +48,7 @@ theme:
     - navigation.sections
     - navigation.path
     - navigation.top
+    - navigation.footer
     - toc.follow
     - search.highlight
     - search.suggest
