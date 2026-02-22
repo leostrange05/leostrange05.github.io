@@ -11,21 +11,23 @@ nav:
   - Branch two:
     - Page1: TAB2/page-1.md
   
-  - 关于本站: diary.md
+  - ℹ️ 关于本站: diary.md
 
 theme:
   name: material
   custom_dir: overrides
   palette:
     # Palette toggle for light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/brightness-7
         name: 切换至深色模式
     # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: blue grey
       accent: lime
       toggle:
@@ -37,7 +39,7 @@ theme:
     code: Jetbrains Mono
   language: zh
   icon:
-    logo: material/clippy
+    logo: fontawesome/solid/home-lg
     annotation: material/arrow-right-circle-outline
     
   favicon: 
@@ -93,6 +95,8 @@ markdown_extensions:  # admonition
   - attr_list          # image
   - md_in_html
   - pymdownx.blocks.caption
+
+  - footnotes          # footnote
 
 extra_css:
   - stylesheets/extra.css
