@@ -46,7 +46,7 @@ theme:
     code: Jetbrains Mono
   language: zh
   icon:
-    logo: material/home
+    logo: simple/meteor
     annotation: material/arrow-right-circle-outline
     
   favicon: "favicon.ico"
@@ -66,8 +66,6 @@ theme:
 
 plugins:
   - search
-  - macros:
-      module_name: main  # This points to your main.py
 
   - blog:
       blog_dir: musicspace
