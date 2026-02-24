@@ -1,8 +1,17 @@
-site_name: Leo's Blog
+site_name: 述真阁
 site_url: https://leostrange05.github.io/
 
 nav:
   - 🏠 主页: index.md
+
+  - 🛠️ 技术博客:
+    - 导览: techblog/index.md
+
+  - 🎵 音乐空间:
+    - 导览: musicspace/index.md
+
+  - ℹ️ 关于本站: diary.md
+
   - Branch one:
     - home: Tab1/index.md
     - page: Tab1/page-1.md
@@ -10,8 +19,6 @@ nav:
       - subpage: Tab1/new/page-3.md
   - Branch two:
     - Page1: TAB2/page-1.md
-  
-  - ℹ️ 关于本站: diary.md
 
 theme:
   name: material
@@ -39,10 +46,10 @@ theme:
     code: Jetbrains Mono
   language: zh
   icon:
-    logo: fontawesome/solid/home-lg
+    logo: material/home
     annotation: material/arrow-right-circle-outline
     
-  favicon: 
+  favicon: "favicon.ico"
   features:
     # - navigation.instant
     - navigation.tabs
@@ -61,6 +68,15 @@ plugins:
   - search
   - macros:
       module_name: main  # This points to your main.py
+
+  - blog:
+      blog_dir: musicspace
+      blog_toc: true
+      post_readtime: false
+    
+  - blog:
+      blog_dir: techblog
+      blog_toc: true
       
 markdown_extensions:  # admonition
   - admonition
@@ -102,6 +118,7 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  comments: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/leostrange05
@@ -109,6 +126,9 @@ extra:
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/32313515/leostrange
       name: Stack Overflow
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/profiles/76561198888960145/
+      name: Steam
     - icon: fontawesome/brands/orcid
       link: https://orcid.org/0009-0003-4712-4764)
       name: ORCID
