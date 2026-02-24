@@ -39,11 +39,6 @@ hide:
 </div>
 
 
-## :material-file-clock:  最近更新
-
-{{ recent_updates(5) }}
-
-
 === "C++"
     ```cpp
     #include <iostream>
