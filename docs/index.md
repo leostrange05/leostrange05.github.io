@@ -26,16 +26,6 @@ hide:
     Introduction to Branch 1.
     [:octicons-arrow-right-24: 进入章节](Tab1/index.md)
 
--   :material-book-open-variant: __Branch 1__
-    ---
-    Introduction to Branch 1.
-    [:octicons-arrow-right-24: 进入章节](Tab1/index.md)
-
--   :material-book-open-variant: __Branch 2__
-    ---
-    Introduction to Branch 2.
-    [:octicons-arrow-right-24: 进入章节](TAB2/page-1.md)
-
 </div>
 
 

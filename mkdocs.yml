@@ -17,8 +17,6 @@ nav:
     - page: Tab1/page-1.md
     - another page:
       - subpage: Tab1/new/page-3.md
-  - Branch two:
-    - Page1: TAB2/page-1.md
 
 theme:
   name: material
@@ -57,7 +55,6 @@ theme:
     - navigation.sections
     - navigation.path
     - navigation.top
-    - navigation.footer
     - toc.follow
     - search.highlight
     - search.suggest
