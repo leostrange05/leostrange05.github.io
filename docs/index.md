@@ -21,12 +21,9 @@ hide:
     了解本站的构建过程和技术细节。
     [:octicons-arrow-right-24: 查看详情](diary.md)
 
--   :material-book-open-variant: __Branch 1__
-    ---
-    Introduction to Branch 1.
-    [:octicons-arrow-right-24: 进入章节](Tab1/index.md)
 
 </div>
+
 
 
 === "C++"
@@ -60,38 +57,3 @@ hide:
         }
     }
     ```
-
-
-
-=== "C++"
-```cpp
-#include <iostream>
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
-```
-=== "python"
-```python
-def greet():
-    print("Hello, World!")
-greet()
-```
-=== "verilog"
-```verilog
-module hello_world;
-initial begin
-    $display("Hello, World!");
-    $finish;
-end
-endmodule
-```
-=== "java"
-```java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-

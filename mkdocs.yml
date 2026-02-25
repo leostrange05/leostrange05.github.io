@@ -47,7 +47,7 @@ theme:
     logo: simple/meteor
     annotation: material/arrow-right-circle-outline
     
-  favicon: "favicon.ico"
+  favicon: favicon.ico
   features:
     # - navigation.instant
     - navigation.tabs
