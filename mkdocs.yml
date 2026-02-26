@@ -6,17 +6,22 @@ nav:
 
   - 🛠️ 技术博客:
     - 导览: techblog/index.md
+    - 标签汇总: techblog/tags.md
 
   - 🎵 音乐空间:
     - 导览: musicspace/index.md
 
-  - ℹ️ 关于本站: diary.md
+  - 🔗 网上邻居:
+    - 网上邻居: friends.md
 
-  - Branch one:
-    - home: Tab1/index.md
-    - page: Tab1/page-1.md
-    - another page:
-      - subpage: Tab1/new/page-3.md
+  - ℹ️ 关于本站:
+    - 本站志: diary.md
+
+  # - Branch one:
+  #   - home: Tab1/index.md
+  #   - page: Tab1/page-1.md
+  #   - another page:
+  #     - subpage: Tab1/new/page-3.md
 
 theme:
   name: material
@@ -72,6 +77,10 @@ plugins:
   - blog:
       blog_dir: techblog
       blog_toc: true
+
+  - tags:
+      enabled: true
+      tags_hierarchy: true
       
 markdown_extensions:  # admonition
   - admonition
@@ -97,8 +106,9 @@ markdown_extensions:  # admonition
       alternate_style: true
 
   - tables            # table
-
-  - attr_list         # icon emoji
+  - toc:
+      permalink: true
+                      # icon emoji
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -115,6 +125,9 @@ extra_css:
 extra:
   comments: true
   social:
+    - icon: material/email
+      link: mailto:cheng08032005@outlook.com
+      name: 电子邮件
     - icon: fontawesome/brands/github
       link: https://github.com/leostrange05
       name: GitHub

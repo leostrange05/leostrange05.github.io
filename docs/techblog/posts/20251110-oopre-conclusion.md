@@ -1,6 +1,12 @@
 ---
 date: 2025-11-10
 title: OOPre 2025 课程总结与回顾
+categories: 
+    - 程序设计
+tags:
+    - 面向对象
+    - 设计模式
+    - Java
 ---
 
 !!! note "转载来源"
@@ -10,7 +16,7 @@ title: OOPre 2025 课程总结与回顾
 
 ### 1. 继承与接口设计
 
-![img](https://i-blog.csdnimg.cn/communtity/2268a9325a4b48d39b8100b20a6d4a2d.png "#left")
+![](https://cdn.jsdelivr.net/gh/leostrange05/Images/image20260226115543642.png)
 
 * `Equipment` 和 `Bottle` 为 `Item` 类的子类，
 

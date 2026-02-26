@@ -19,52 +19,39 @@
     </script>
   </div>
 
+  <!-- Synchronize Giscus theme with palette -->
   <script>
-     /* 1. CONFIGURATION: Map MkDocs schemes to Giscus themes */
-    const G_THEMES = {
-      "default": "light",
-      "slate": "dark_dimmed"
-    };
+    var giscus = document.querySelector("script[src*=giscus]")
 
-    /* 2. LOGIC: Function to send the theme update to the Giscus iframe */
-    function syncGiscus() {
-      // Get the current scheme from the body attribute (the most direct way)
-      const currentScheme = document.body.getAttribute("data-md-color-scheme") || "default";
-      const giscusTheme = G_THEMES[currentScheme] || "light";
-      
-      console.log("Syncing Giscus. Scheme:", currentScheme, "-> Theme:", giscusTheme);
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "dark_dimmed"
+        : "light"
 
-      const iframe = document.querySelector('iframe.giscus-frame');
-      if (iframe && iframe.contentWindow) {
-        iframe.contentWindow.postMessage(
-          { giscus: { setConfig: { theme: giscusTheme } } },
-          "https://giscus.app"
-        );
-      }
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
     }
 
-    /* 3. OBSERVER: Watch for changes to the <body> tag's attributes
-     * This replaces the "md-theme-change" event listener */
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === "attributes" && mutation.attributeName === "data-md-color-scheme") {
-          console.log("Theme change detected via MutationObserver!");
-          syncGiscus();
-        }
-      });
-    });
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "dark_dimmed"
+            : "light"
 
-    // Start observing the body tag
-    observer.observe(document.body, { attributes: true });
-
-    /* 4. INITIALIZATION: Sync theme when Giscus finishes loading */
-    window.addEventListener('message', (event) => {
-      if (event.origin === 'https://giscus.app') {
-        // Giscus sends a message when it's ready
-        if (event.data && typeof event.data === 'object' && event.data.giscus) {
-          syncGiscus(); 
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
         }
-      }
-    });
+      })
+    })
   </script>
 {% endif %}
