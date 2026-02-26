@@ -2,50 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://leostrange05.github.io/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/diary/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
+    </url>
+    <url>
+         <loc>https://leostrange05.github.io/friends/</loc>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/Tab1/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/Tab1/page-1/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/Tab1/new/page-3/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/musicspace/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/musicspace/2026/01/01/%E5%8F%A4%E5%85%B8%E5%BA%8F%E7%AB%A0%E8%82%96%E9%82%A6%E5%8F%99%E4%BA%8B%E6%9B%B2%E4%B8%8E%E6%8B%89%E8%B5%AB%E5%8B%83%E6%8B%89%E5%A7%86%E6%96%AF%E8%88%92%E6%9B%BC%E9%92%A2%E7%90%B4%E5%8D%8F%E5%A5%8F%E6%9B%B2/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/techblog/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
+    </url>
+    <url>
+         <loc>https://leostrange05.github.io/techblog/tags/</loc>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/techblog/2025/11/10/oopre-2025-%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93%E4%B8%8E%E5%9B%9E%E9%A1%BE/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/musicspace/archive/2026/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/musicspace/category/%E5%8F%A4%E5%85%B8%E9%9F%B3%E4%B9%90/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
     </url>
     <url>
          <loc>https://leostrange05.github.io/techblog/archive/2025/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <lastmod>2026-02-26</lastmod>
+    </url>
+    <url>
+         <loc>https://leostrange05.github.io/techblog/category/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
+         <lastmod>2026-02-26</lastmod>
     </url>
 </urlset>
