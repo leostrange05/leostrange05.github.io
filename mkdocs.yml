@@ -5,8 +5,8 @@ nav:
   - 🏠 主页: index.md
 
   - 🛠️ 技术博客:
-    - 导览: techblog/index.md
-    - 标签汇总: techblog/tags.md
+    - 导览: blog/index.md
+    - 标签汇总: blog/tags.md
 
   - 🎵 音乐空间:
     - 导览: musicspace/index.md
@@ -75,7 +75,7 @@ plugins:
       post_readtime: false
     
   - blog:
-      blog_dir: techblog
+      blog_dir: blog
       blog_toc: true
 
   - tags:

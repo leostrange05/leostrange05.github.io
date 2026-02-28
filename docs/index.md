@@ -12,7 +12,7 @@ hide:
 
     深入探讨各种技术话题，主要聚焦于计算机科学的各个领域。
 
-    [:octicons-arrow-right-24: 开始阅读](techblog/index.md)
+    [:octicons-arrow-right-24: 开始阅读](blog/index.md)
 
 -  :musical_note: __音乐空间__
 
