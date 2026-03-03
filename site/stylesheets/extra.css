@@ -35,3 +35,18 @@
   --md-code-bg-color:           var(--sol-base2);
   --md-code-fg-color:           var(--sol-base00);
 }
+
+.md-typeset blockquote {
+    font-family: "Noto Serif SC", serif;
+    font-size: 1.2em;
+    font-weight: 750;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+
+.md-post__content div[style*="margin-top: -30px"] {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+}

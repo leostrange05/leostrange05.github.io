@@ -69,6 +69,14 @@ theme:
 plugins:
   - search
 
+  - git-revision-date-localized:
+      type: timeago  # 可选: date, datetime, timeago
+      locale: zh  # 设置为中文显示
+      fallback_to_build_date: true  # 如果git信息不可用，使用构建日期
+
+  - statistics:
+      page_check_metadata: date
+
   - blog:
       blog_dir: musicspace
       blog_toc: true
@@ -77,6 +85,7 @@ plugins:
   - blog:
       blog_dir: blog
       blog_toc: true
+      post_readtime: false
 
   - tags:
       enabled: true
@@ -120,6 +129,7 @@ markdown_extensions:  # admonition
   - footnotes          # footnote
 
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap
   - stylesheets/extra.css
 
 extra:
