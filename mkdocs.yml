@@ -128,6 +128,12 @@ markdown_extensions:  # admonition
 
   - footnotes          # footnote
 
+  - pymdownx.critic    # formatting: highlight, insert, delete
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
 extra_css:
   - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap
   - stylesheets/extra.css
