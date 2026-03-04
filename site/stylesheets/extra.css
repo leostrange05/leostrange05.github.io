@@ -36,13 +36,49 @@
   --md-code-fg-color:           var(--sol-base00);
 }
 
-.md-typeset blockquote {
-    font-family: "Noto Serif SC", serif;
-    font-size: 1.1em;
-    font-weight: 750;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 5px 2px;
-    border-radius: 10px;
+.md-typeset blockquote:has(p.lyrics) {
+    text-align: center !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-left: none !important;
+    border-top: 3px solid #ddd !important;
+    border-bottom: 3px solid #ddd !important;
+    padding: 1.5rem !important;
+    margin: 1em auto !important;
+}
+/* This styles the text inside that paragraph */
+.md-typeset blockquote p.lyrics {
+    text-align: center !important;
+    font-family: "Noto Serif SC", serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 600;
+    line-height: 1.5 !important;
+    margin: 0 !important; /* Remove paragraph margins to keep it centered */
+}
+.md-typeset blockquote:has(p.book) {
+    text-align: center !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-left: none !important;
+    border-top: 3px solid #ddd !important;
+    border-bottom: 3px solid #ddd !important;
+    padding: 1rem;
+    margin: 0.5em auto !important;
+}
+.md-typeset blockquote p.book {
+    text-align: left !important;
+    text-indent: 2em !important;
+    font-family: "Noto Serif SC", serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 600;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+}
+.md-typeset blockquote p.booksource {
+    text-align: right !important;
+    font-family: "Noto Serif SC", serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 600;
+    line-height: 1.2 !important;
+    margin: 0 !important;
 }
 
 .md-post__content div[style*="margin-top: -30px"] {
