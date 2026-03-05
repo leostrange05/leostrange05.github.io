@@ -2,9 +2,8 @@
 date: 2025-11-10
 title: OOPre 2025 课程总结与回顾
 categories: 
-    - 程序设计
+    - 面向对象程序设计
 tags:
-    - 面向对象
     - 设计模式
     - Java
 ---
