@@ -24,7 +24,13 @@ tags:
 如果要将其转换为 Windows 的可执行文件，可以使用 PyInstaller 进行打包，命令如下：
 
 ```bash
+pip install pyinstaller
 pyinstaller --noconsole --onefile battery_power.py
+```
+
+需要的 Python 库有：
+```bash
+pip install wmi pillow pystray pywin32
 ```
 
 脚本如下：
