@@ -86,3 +86,27 @@
     margin-bottom: 0.5rem !important;
     display: block !important;
 }
+
+/* Container for the About Me section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* The circular image */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover; /* Prevents stretching */
+}
+
+/* Responsive adjustment for mobile */
+@media screen and (max-width: 76.25em) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
