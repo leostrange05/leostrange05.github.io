@@ -51,6 +51,21 @@ hide:
 
 ---
 
+<div class="about-container" markdown="1">
+
+![Hello!](assets/my-photo.png){.profile-pic}
+
+<div markdown="1">
+
+## 关于我
+
+北航计算机学院本科生一枚。
+
+</div>
+
+</div>
+
+
 === "C++"
     ```cpp
     #include <iostream>
