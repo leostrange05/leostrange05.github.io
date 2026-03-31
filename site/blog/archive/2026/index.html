@@ -715,6 +715,17 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
+        面向对象设计与构造第一单元：表达式解析与运算
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         笔记本电脑电池功耗功率显示插件
       
     </span>
@@ -1383,6 +1394,17 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
+        面向对象设计与构造第一单元：表达式解析与运算
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         笔记本电脑电池功耗功率显示插件
       
     </span>
@@ -1415,6 +1437,1228 @@
       <header class="md-typeset">
         <h1 id="2026">2026<a class="headerlink" href="#2026" title="Permanent link">&para;</a></h1>
       </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-03-31 00:00:00+00:00">2026年3月31日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="../../category/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="md-meta__link">面向对象程序设计</a></li>
+        
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/">面向对象设计与构造第一单元：表达式解析与运算</a></h2>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 7192 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 34 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 1 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 24 分钟</p>
+</div>
+<h3 id="_2"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_2">一、最终架构设计</a></h3>
+<h4 id="1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1">1. 文件树</a></h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>src/
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── MainClass.java                — 程序入口，负责读取输入并驱动解析、计算与输出流程。
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── expr/                     ~ 表达式结构
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   ├── Expr.java                 — 表达式节点
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│   ├── Term.java                 — 项节点
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│   ├── Factor.java               — 因子抽象/接口
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>│   └── factor/               ~ 因子具体实现
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│       ├── CallFunc.java         — 函数调用因子
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>│       ├── Derivative.java       — 求导因子
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>│       ├── ExpoFunc.java         — 指数函数因子
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>│       ├── ExprFactor.java       — 表达式因子
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>│       ├── PowerFunc.java        — 幂函数因子
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>│       ├── SelFactor.java        — 选择式因子
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>│       └── SignedInteger.java    — 常量因子/带符号整数
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>├── globl/                    ~ 函数定义
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>│   ├── DefFunc.java              — 非递推函数定义
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>│   └── RecFunc.java              — 递推函数定义
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>├── poly/                     ~ 多项式计算
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>│   ├── Mono.java                 — 单项式对象
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>│   ├── MonoKey.java              — 单项式键对象，用于同类项判等与合并索引
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>│   └── Poly.java                 — 多项式对象
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>└── syntax/                   ~ 词法语法
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    ├── Lexer.java                — 词法分析器，将输入字符流切分为 token 序列
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    └── Parser.java               — 语法分析器，将 token 序列构建为表达式语法结构
+</span></code></pre></div>
+<h4 id="2"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2">2. 类设计考虑</a></h4>
+<h5 id="1-syntax"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1-syntax">1) <code>syntax</code> 词法语法</a></h5>
+<p>本模块负责将输入的字符串解析为语法树的各个组成部分。在 <code>Parser</code> 类中通过递归下降解析字符串，构建出表达式的层次结构。同时其还可以传入一个可选的“函数实参”成员，用于在函数调用时复用同一套解析逻辑，进行实参的代入与解析。</p>
+<h5 id="2-expr"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2-expr">2) <code>expr</code> 表达式结构</a></h5>
+<p>此模块表示了语法树的各个组成部分。核心类 <code>Expr</code>、<code>Term</code> 和 <code>Factor</code> 分别代表表达式、项和因子，形成了表达式的层次结构。<code>factor</code> 包下的具体实现类则对应不同类型的因子，根据不同因子的含义实现相应的计算逻辑。本模块<strong>基本不实现算术运算</strong>，仅负责表达式的结构化表示和基础的转化与化简，表达式的相乘括号展开也是通过调用 <code>Poly</code> 的运算方法来完成。</p>
+<p>对于向多项式的转换，在 <code>Expr</code> 和 <code>Term</code> 类中均有 <code>solve()</code> 方法，负责将当前表达式/项转换为多项式对象。<code>Term</code> 类中的 <code>solve()</code> 方法将本项中包含的所有因子分类汇总，针对不同类型的因子进行不同的转化：常数和幂函数直接转换，其他类型的因子则进一步递归转换，例如表达式因子幂次的展开、选择式因子的选择求值等。</p>
+<h5 id="3-poly"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#3-poly">3) <code>poly</code> 多项式计算</a></h5>
+<p>多项式 <code>Poly</code> 类最终采用一个 <code>HashMap&lt;MonoKey, BigInteger&gt;</code> 的容器来存储多项式中的单项式列表。HashMap 可以高效地实现<strong>同类项的合并与查找</strong>，且对于等价的多项式能够方便、快速地进行比较。加法、相反数、乘法等算术运算均有实现；同时编写了 <code>toString()</code> 方法，得到最终的输出结果。</p>
+<p>考虑到运算功能需要尽量与 <code>expr</code> 模块分离，求导的运算在此模块中实现。相比于在 <code>expr</code> 模块中直接实现求导功能，在 <code>poly</code> 模块中实现求导可以更好地利用多项式的结构特性，简化求导的实现逻辑，并且使得求导的结果能够直接以多项式的形式进行后续的运算和输出。</p>
+<h5 id="4-globl"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#4-globl">4) <code>globl</code> 函数定义</a></h5>
+<p>在本项目的实现中，函数定义的存储均采用字符串的形式。在解析函数调用时，直接将函数定义字符串传入 <code>Parser</code> 类中进行解析，<strong>复用同一套解析逻辑</strong>，实现函数实参的代入与解析。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/leostrange05/Images/image20260328112122200.png" /></p>
+<h4 id="3"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#3">3. 设计度量与评估</a></h4>
+<h5 id="1_1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1_1">1) 核心度量指标</a></h5>
+<p><strong>注：完整数据请见附录</strong></p>
+<h6 id="1_2"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1_2">1. 基础规模统计数据</a></h6>
+<p><em>【AI生成内容】 指标解释：<code>LOC</code> (Lines of Code) 为代码行数。类的属性个数与方法个数反映了类所承载的状态与行为规模；方法代码规模则直观体现了单个逻辑块的繁重程度。</em></p>
+<p><strong>(1) 类级别规模度量</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">模块包</th>
+<th style="text-align: left;">类名</th>
+<th style="text-align: center;">属性个数</th>
+<th style="text-align: center;">方法个数</th>
+<th style="text-align: center;">类总代码规模 (LOC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>入口</strong></td>
+<td style="text-align: left;"><code>MainClass</code></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>expr</strong></td>
+<td style="text-align: left;"><code>Expr</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">35</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Term</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">111</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Factor</code> (接口)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>factor</strong></td>
+<td style="text-align: left;"><code>CallFunc</code> / <code>Derivative</code> / <code>ExpoFunc</code> 等</td>
+<td style="text-align: center;">1~4</td>
+<td style="text-align: center;">2~3</td>
+<td style="text-align: center;">均在 17~34 之间</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>globl</strong></td>
+<td style="text-align: left;"><code>DefFunc</code> / <code>RecFunc</code></td>
+<td style="text-align: center;">1~4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">13 / 67</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>poly</strong></td>
+<td style="text-align: left;"><code>Mono</code></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: center;"><strong>180</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>MonoKey</code></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">46</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Poly</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>14</strong></td>
+<td style="text-align: center;"><strong>162</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>syntax</strong></td>
+<td style="text-align: left;"><code>Lexer</code></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">54</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Parser</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;"><strong>171</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>(注：为节省篇幅，结构高度相似的具体因子类已做合并展示)</em></p>
+<p><strong>(2) 关键方法规模度量 (选取代码行数突出的方法)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类名</th>
+<th style="text-align: left;">方法名称</th>
+<th style="text-align: center;">方法代码规模 (LOC)</th>
+<th style="text-align: left;">职责描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>poly.Mono</code></td>
+<td style="text-align: left;"><code>toString</code></td>
+<td style="text-align: center;"><strong>62</strong></td>
+<td style="text-align: left;">处理单项式各项的正负号、省略系数1、省略指数1等格式化输出</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser</code></td>
+<td style="text-align: left;"><code>parseFactor</code></td>
+<td style="text-align: center;"><strong>54</strong></td>
+<td style="text-align: left;">递归下降解析因子，包含对各类变量、表达式、函数的分类识别</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.RecFunc</code></td>
+<td style="text-align: left;"><code>getDef</code></td>
+<td style="text-align: center;"><strong>41</strong></td>
+<td style="text-align: left;">递推函数的获取与递推代入逻辑</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly</code></td>
+<td style="text-align: left;"><code>toString</code></td>
+<td style="text-align: center;"><strong>39</strong></td>
+<td style="text-align: left;">多项式整体的拼接与首项正负号特判</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MainClass</code></td>
+<td style="text-align: left;"><code>main</code></td>
+<td style="text-align: center;"><strong>30</strong></td>
+<td style="text-align: left;">程序入口，控制整体读入与计算流程</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer</code></td>
+<td style="text-align: left;"><code>next</code> (无参)</td>
+<td style="text-align: center;"><strong>23</strong></td>
+<td style="text-align: left;">字符流步进与 Token 切分</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term</code></td>
+<td style="text-align: left;"><code>addFactor</code></td>
+<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: left;">将解析出的因子分类并入 Term 内部的对应集合中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>基础数据分析：</strong>
+1. <strong>类的体量呈典型的两极分化</strong>：项目的核心运算枢纽 <code>poly.Mono</code>、<code>poly.Poly</code> 与核心控制枢纽 <code>syntax.Parser</code> 的代码规模均超过了 160 行，且方法个数较多（8~14个）；而基础的结构存储节点（如 <code>expr.Expr</code> 和所有的 <code>factor</code> 因子）通常只有不到 35 行代码和极少的方法。这符合解析器/计算引擎的典型特征：底层节点纯粹用于携带数据，而顶层引擎集中处理复杂逻辑。
+2. <strong>良好的状态封装（无 God Class）</strong>：所有类的属性个数均被严格控制在 4 个以内。这说明没有出现状态过度膨胀的“上帝类”，各模块所需的数据被合理地分散和封装在了对应的内部状态中，保障了实例的安全性与轻量化。
+3. <strong>个别方法逻辑过载（方法规模偏大）</strong>：从方法级 LOC 可以看出，<code>Mono.toString</code> (62行) 和 <code>Parser.parseFactor</code> (54行) 占据了极庞大的篇幅。这通常伴随着大量的硬编码或长长的 <code>if-else</code> 分支链。这也与后续的“圈复杂度”数据高度吻合，揭示了这些“长方法（Long Method）”是重构和优化的首要目标。</p>
+<h6 id="2_1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2_1">2. 类级别复杂度度量 (选取典型类)</a></h6>
+<p><em>【AI生成内容】 指标解释：<code>WMC</code> (Weighted Methods per Class) 为类的总复杂度，等于类中所有方法的圈复杂度之和；<code>OCmax</code> 为该类中圈复杂度最高的方法的值。</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类名 (Class)</th>
+<th style="text-align: left;">职责描述</th>
+<th style="text-align: left;">WMC (总复杂度)</th>
+<th style="text-align: left;">OCmax (最大方法复杂度)</th>
+<th style="text-align: left;">OCavg (平均方法复杂度)</th>
+<th style="text-align: left;">分析预判</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>poly.Mono</code></td>
+<td style="text-align: left;">单项式计算与格式化输出</td>
+<td style="text-align: left;"><strong>41</strong></td>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">3.15</td>
+<td style="text-align: left;">极高。主要集中在输出逻辑与乘法合并。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly</code></td>
+<td style="text-align: left;">多项式容器与运算</td>
+<td style="text-align: left;"><strong>36</strong></td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">2.57</td>
+<td style="text-align: left;">偏高。承担了加减乘除的核心数学运算。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser</code></td>
+<td style="text-align: left;">递归下降语法解析</td>
+<td style="text-align: left;"><strong>30</strong></td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">3.75</td>
+<td style="text-align: left;">偏高。需要根据不同的 Token 进行多分支判断。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term</code></td>
+<td style="text-align: left;">项的管理与因子合并</td>
+<td style="text-align: left;"><strong>26</strong></td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">2.89</td>
+<td style="text-align: left;">偏高。在拆解和转化因子时存在较多分类判断。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.*</code></td>
+<td style="text-align: left;">各种具体因子(如<code>CallFunc</code>)</td>
+<td style="text-align: left;"><strong>2~3</strong></td>
+<td style="text-align: left;">1~2</td>
+<td style="text-align: left;">1.00~1.50</td>
+<td style="text-align: left;"><strong>极低</strong>。体现了多态的优势。</td>
+</tr>
+</tbody>
+</table>
+<h6 id="3_1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#3_1">3. 方法级别圈复杂度度量 (选取极端方法)</a></h6>
+<p><em>【AI生成内容】 指标解释：<code>v(G)</code> 即圈复杂度(Cyclomatic Complexity)，代表方法中独立的线性路径数量（if-else, while, switch等分支的总数）。一般认为 v(G) &gt; 10 的方法需要重构或特别关注。</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方法名 (Method)</th>
+<th style="text-align: left;">v(G) 圈复杂度</th>
+<th style="text-align: left;">CogC 认知复杂度</th>
+<th style="text-align: left;">形成原因分析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.toString()</code></td>
+<td style="text-align: left;"><strong>20</strong></td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">处理输出时，对系数为1、-1、0，指数为0、1等边界情况进行了大量的 <code>if-else</code> 特判。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseFactor()</code></td>
+<td style="text-align: left;"><strong>15</strong></td>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">解析因子时，面临表达式、常数、各种函数等多种可能，导致多分支结构。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.addFactor(Factor)</code></td>
+<td style="text-align: left;"><strong>10</strong></td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">将解析到的因子归类并压入项中，涉及类型判断。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.toString()</code></td>
+<td style="text-align: left;"><strong>10</strong></td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">多项式拼接时处理首项正负号等特判。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h5 id="2_2"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2_2">2) 基于度量数据的深入优缺点分析</a></h5>
+<h6 id="1_3"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1_3">1. 内聚与耦合情况分析</a></h6>
+<ul>
+<li><strong>多态带来的高内聚与低复杂度（优点）</strong>
+    从度量数据可以看出，<code>expr.factor</code> 包下的所有具体因子类（如 <code>ExpoFunc</code>, <code>PowerFunc</code>, <code>SignedInteger</code> 等）的平均复杂度（OCavg）均在 <code>1.0</code> 左右，WMC 仅为 <code>2~3</code>。这说明这些类的<strong>内聚程度极高</strong>。我们通过抽象出 <code>Factor</code> 接口/父类，将不同的解析和转化逻辑分散到了各自的类中，完美符合了<strong>单一职责原则(SRP)</strong>。</li>
+<li><strong>核心控制类的耦合不可避免（中性）</strong>
+    <code>syntax.Parser</code> 类的 WMC 达到了 <code>30</code>，<code>parseFactor()</code> 的圈复杂度达到 <code>15</code>。这是由于 <code>Parser</code> 作为构建抽象语法树（AST）的核心枢纽，必须与 <code>expr</code> 包下的所有节点类产生耦合。大量的 <code>if-else/switch</code> 用于判断 Token 类型是递归下降算法的固有特征。</li>
+<li><strong>运算与表示的解耦（优点）</strong>
+    整个项目将结构（<code>expr</code>，包平均复杂度仅为 2.54）和运算（<code>poly</code>，包总复杂度最高，达到 92）进行了拆分。<code>expr</code> 层只做基础化简，而合并同类项、求导逻辑全部分配给了 <code>poly</code> 模块，实现了<strong>逻辑解耦</strong>。</li>
+</ul>
+<h6 id="2_3"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2_3">2. 缺点与自我点评</a></h6>
+<p><strong>自我点评：隐患与改进空间</strong>
+尽管整体架构切分合理，但从度量数据中也暴露出部分代码存在“代码异味（Code Smell）”，主要体现在以下两点：</p>
+<ol>
+<li><strong>输出逻辑过于臃肿（以 <code>Mono.toString()</code> 为例）</strong>：
+    <code>poly.Mono.toString()</code> 的圈复杂度达到了惊人的 <strong>20</strong>，认知复杂度达到了 <strong>25</strong>。在实现中，为了满足正确的输出格式（如省略系数1、省略指数1、项为0时不输出等），堆砌了大量的控制分支。
+    <em>改进思路</em>：后续应当将“表达式的字符串格式化”逻辑单独抽离为一个 <code>Printer</code> 或 <code>Formatter</code> 类，或者将其分解为 <code>formatCoefficient()</code>, <code>formatVariable()</code> 等多个辅助方法，以降低单个方法的复杂度。</li>
+<li><strong><code>Term.addFactor()</code> 违背开闭原则（OCP）</strong>：
+    该方法的圈复杂度达到 <strong>10</strong>。说明在向 <code>Term</code> 中添加因子时，可能使用了大量的 <code>instanceof</code> 或 <code>if-else</code> 来对因子类型进行特判。
+    <em>改进思路</em>：如果未来再增加新的函数类型，此处必然需要修改代码。应当考虑让 <code>Factor</code> 提供更完善的接口（如类似访问者模式 <code>Visitor</code>，或者统一的 <code>mergeIntoTerm()</code> 方法），利用多态将判断逻辑下放到各个因子内部。</li>
+</ol>
+<h3 id="_3"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_3">二、迭代过程中的设计体验</a></h3>
+<p>在第一次作业中，项目即形成了“<code>expr</code> 模块重解析、<code>poly</code> 模块重运算”的结构；在迭代过程中，项目的总体架构并未发生太大的变化，仅有新增功能的加入和微小的调整。此外还有一些细节上的设计优化和实现上的改进。</p>
+<h4 id="1_4"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1_4">1. 迭代中的设计变化</a></h4>
+<h5 id="1_5"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1_5">1) 多项式类的容器变化</a></h5>
+<p>在最初的设计中，我直接使用一个 <code>ArrayList&lt;Mono&gt;</code> 来存储多项式中的单项式列表，并专门定义了一个方法来合并同类项。然而在第二次作业时，由于等价比较实现不当，导致合并同类项的效率极低，非常容易超时。因此在第三次作业中，我将多项式类中的单项式列表改为一个 <code>HashMap&lt;MonoKey, BigInteger&gt;</code>，极大提升了效率。</p>
+<h5 id="2_4"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2_4">2) 记忆化与缓存意识的形成</a></h5>
+<p>第二次作业实现指数函数，在递归调用 <code>toString()</code> 方法时，我起初并未做任何缓存处理，导致嵌套多层指数函数时容易形成过大的递归树，最终导致超时。在 bug 修复阶段及第三次作业中，我对于每一个 <code>Poly</code> 对象都增加了 <code>stringCache</code> 成员，用于在第一次调用 <code>toString()</code> 方法后将结果缓存起来，后续再次调用时直接返回缓存结果，极大提升了效率。在后续的迭代中，对于递推函数的记忆化处理也是同样的思路。</p>
+<hr />
+<h4 id="2_5"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2_5">2. 新增迭代任务的讨论</a></h4>
+<p>假设新增迭代任务：增加三角函数因子 <code>sin(因子)^k</code> 和 <code>cos(因子)^k</code>，则需要：</p>
+<ul>
+<li>在 <code>expr/factor</code> 包下新增 <code>SinFunc</code> 和 <code>CosFunc</code> 两个类，作为三角函数因子对象</li>
+<li>在 <code>Mono</code> 类中对单项式的最终结构进行调整：每一项增加两个 <code>HashMap&lt;Poly, BigInteger&gt;</code> 分别存储 <code>sin</code> 和 <code>cos</code> 的参数和幂次</li>
+<li>在 <code>Term</code> 类的 <code>solve()</code> 方法中增加对于三角函数因子的处理逻辑，将其转化为对应的多项式成分进行后续的运算和输出</li>
+</ul>
+<p>新增因子类型时，只需要考虑其在<strong>最终 Poly 多项式中的表现形式</strong>、其<strong>自身拥有的成员参数</strong>、以及<strong>从表达式结构到多项式结构的转化逻辑</strong>即可，其他部分的设计和实现基本不受影响，具有较好的扩展性。</p>
+<h3 id="bug"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#bug">三、作业中出现的 bug 分析</a></h3>
+<ol>
+<li>第一次作业：暂未发现 bug</li>
+<li>第二次作业：<ul>
+<li>未能正确处理函数定义式中 <code>x^+2</code>、<code>(x+1)^+2</code> 这类指数里有 '+' 的情况。<ul>
+<li>原因：第一次作业为了图方便，在 <code>MainClass</code> 中预处理字符串时把所有的 <code>^+</code> 替换成了 <code>^</code>，但第二次迭代时忘记在自定义函数中也进行同样的预处理。</li>
+<li>解决：在第三次作业中，直接删去了 <code>MainClass</code> 中替换这一部分的逻辑，预处理只进行空白字符删除，把这类情况的处理留给 <code>Parser</code> 类中的语法分析逻辑来完成。</li>
+<li>总结：在开发周期长、迭代次数多的项目中，尽量<strong>减少“一拍脑袋的特殊处理”</strong>，需要保证逻辑的<strong>一致性</strong>和<strong>复用性</strong>，避免在将来的迭代中忘记对某些特殊处理进行维护和更新。</li>
+</ul>
+</li>
+<li>合并同类项效率极低，导致超时。<ul>
+<li>原因：在 <code>Poly</code> 类中使用了 <code>ArrayList&lt;Mono&gt;</code> 来存储单项式列表，并专门定义了一个方法来合并同类项。在实现 <code>equals()</code> 方法时，无脑选用题目规定的“多项式相等”的定义——两个多项式相减为 0。 由于每次判等都需要执行多项式剑法运算和合并同类项的操作，导致效率极低。</li>
+<li>解决：将多项式类中的单项式列表改为一个 <code>HashMap&lt;MonoKey, BigInteger&gt;</code>，极大提升了合并和判等效率。</li>
+<li>总结：在设计数据结构时，需要充分考虑其<strong>性能特性</strong>和<strong>适用场景</strong>，选择合适的容器来存储数据，以满足项目的性能需求。</li>
+</ul>
+</li>
+<li>多层嵌套的 <code>toString()</code> 调用极慢<ul>
+<li>原因：在 <code>ExpoFunc</code> 类中实现 <code>toString()</code> 方法时，直接递归调用 <code>toString()</code> 方法来获取指数函数参数的字符串表示，未考虑缓存处理，导致嵌套多层指数函数时形成过大的递归树，最终导致超时。</li>
+<li>解决：在 <code>Poly</code> 类中增加了 <code>stringCache</code> 成员，用于在第一次调用 <code>toString()</code> 方法后将结果缓存起来，后续再次调用时直接返回缓存结果，极大提升了效率。</li>
+<li>总结：在设计递归调用的算法时，需要考虑<strong>递归树的规模</strong>和<strong>重复计算的情况</strong>，适当引入缓存机制来避免不必要的重复计算，提高效率。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>第三次作业<ul>
+<li>特定表达式展开时，结果的同类项合并异常<ul>
+<li>原因：第三次作业中，由于直接使用了 HashMap 存储单项式列表，我将原本的合并同类项方法 <code>merge</code> 的功能改为“去除 HashMap 中系数为 0 的项”。但是，在多项式的加法、乘法等运算后没有及时调用 <code>merge</code> 方法，导致在某些特定表达式展开时，HashMap 中会存在大量系数为 0 的项，最终导致同类项合并异常。</li>
+<li>解决：在 <code>Poly</code> 类的加法、乘法等运算方法中，对返回值调用 <code>merge</code> 方法，确保 HashMap 中不包含系数为 0 的项。</li>
+<li>总结：设计时需尽量保证访问的对象都处于正确的状态，<strong>避免出现“半成品”对象被其他方法访问</strong>的情况。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="1-bug"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1-bug">1. Bug 与方法复杂度的相关性分析</a></h4>
+<ol>
+<li><strong>Bug 往往潜伏于低复杂度的“边缘”方法中</strong>
+   纵观这几次作业的 bug，大多出现在诸如 <code>Poly.equals()</code>（v(G)=3）、<code>Poly.add()</code>（v(G)=3）以及 <code>MainClass</code> 的预处理逻辑等<strong>圈复杂度和代码规模低</strong>的方法中。这说明本单元由于算法较基础，我遇到的 bug 很少是“控制流写错”导致的，反而大多缘于<strong>容器选择不当</strong>或<strong>状态维护遗漏</strong>（如运算后忘记调用 <code>merge()</code> 导致含系数 0 的废项）。这些可以说是架构设计与开发规范的失误。</li>
+<li><strong>高复杂度方法的“幸存者偏差”</strong>
+   项目中圈复杂度最高的方法如 <code>Mono.toString()</code>（v(G)=20, LOC=62）和 <code>Parser.parseFactor()</code>（v(G)=15, LOC=54），反而没有出现功能性 bug。这是由于在编写这些分支庞杂的核心逻辑时，防备心理较重，重点关注了这些方法。但这并不值得骄傲，因为如此庞大的代码块已经几乎丧失了可维护性，一旦未来需要改动格式（如增加新的因子类型），极易引发连锁反应。</li>
+<li><strong>递归调用的性能刺客</strong>
+   <code>Poly.toString()</code>（v(G)=10, LOC=39）复杂度偏高且承担着表达式递归结构化输出的职责。在此确实爆出了性能问题（未加缓存导致超时）。这说明当复杂逻辑伴生着深度递归时，性能开销的不可预见性会大大增加。</li>
+</ol>
+<h4 id="2_6"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2_6">2. 降低方法复杂度的思考策略</a></h4>
+<p>反思这些拥有高圈复杂度的情况，可能在后续开发中采取如下方式来优化复杂的方法：</p>
+<ul>
+<li><strong>提取子方法</strong>：
+  针对 <code>Mono.toString()</code> 中为了满足诸如“系数1、-1省略”、“指数1省略”等堆砌的并排 <code>if-else</code>，可以将它们拆解成毫无耦合的辅助方法，例如 <code>formatCoefficient()</code>、<code>formatX()</code> 等。让主方法只负责按顺序调用它们进行字符串拼接（<code>StringBuilder</code>）。</li>
+<li><strong>用多态替换条件分支</strong>：
+  在 <code>Term.addFactor()</code>（v(G)=10）中，包含了大量的 <code>instanceof</code> 判断和转型，将不同因子塞入不同的容器。这是非常违背开闭原则的。实际上可以让 <code>Factor</code> 提供一个类似 <code>mergeInto(Term term)</code> 的方法，利用多态将具体的判断与存储归纳逻辑下放到各个因子具体类中去。</li>
+<li><strong>分离计算与展示的职责</strong>：
+  数学计算类（如 <code>Mono</code>，<code>Poly</code>）本身已经承担了大量的高复杂度运算（WMC高达 41），如果能将 <code>toString</code> 的任务剥离，专门编写一个独立的 <code>ASTPrinter</code> 或 <code>Formatter</code> 工具类处理格式化规范，能够大大降低 <code>Mono</code> 和 <code>Poly</code> 自身的逻辑厚度，降低耦合。</li>
+</ul>
+<h3 id="bug_1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#bug_1">四、发现别人 bug 的策略</a></h3>
+<p>由于时间有限，我基本没有进行 JUnit 测试，因此在发现别人 bug / 验证自身程序的过程中，主要是通过手动构造测试用例/自动随机生成测试用例来进行的。这种方法覆盖率不高，效率也较低，因此我的 hack 表现并不理想。</p>
+<p>由于阅读别人代码的时间也较为有限，我一般是挑选一些关键的代码进行阅读，例如易出现时间瓶颈的优化方法等，针对性构造 hack 数据。</p>
+<h3 id="_4"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_4">五、采取的优化策略</a></h3>
+<p>时间性能上的优化在上文基本均已提及，主要包括缓存与记忆化、以及合适容器的选择。下面主要说明输出长度上的优化。</p>
+<ul>
+<li>如果多项式中有系数为正的项，保证输出结果的第一项为正系数项。这是第一次作业开始就有的优化。</li>
+<li>检测指数函数 <code>exp((表达式))</code> 中的 “表达式” 是否为单个因子，如果是，可以直接输出为 <code>exp(因子)</code> 的形式。在此有必要介绍我的判断策略：
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>    如果 多项式项数 &gt; 1:
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>        return 非单个因子
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    否则：
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        引入单项式的“因子权重”
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        因子权重 = [常系数 != 1] + [x 的指数 != 0]
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>                        + [y 的指数 != 0] + [exp 参数多项式 != 0]
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        如果 因子权重 &lt;= 1:
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>            return 单个因子
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        否则:
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>            return 非单个因子
+</span></code></pre></div></li>
+<li>对于 exp 指数函数的参数多项式，可以通过将 <code>exp((a*k*x+b*k*x^2+...))</code> 转化为 <code>exp((a*x+b*x^2+...))^k</code> 的形式来减少输出长度。为了减少可能的时间开销，在枚举 <code>k</code> 的值时，我将搜索的范围进行了限制：令 <code>g = gcd(多项式项的系数集合)</code>，则 <code>k</code> 的搜索范围为 $k \in {g/i | i \in {2,3,...,9}}$。可以证明，在这个范围内的 <code>k</code> 一定包含了所有能够使输出长度减少的 <code>k</code>。</li>
+</ul>
+<p>以上的优化保证输出结果正确，且对于代码的简洁性没有太大的影响。我没有采用过于复杂的将一个 exp 指数函数分组拆分后提取公因数的优化，虽然这种优化在某些特定的表达式下能够进一步减少输出长度，但其实现较为复杂，且极易增加时间开销。</p>
+<h3 id="_5"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_5">六、大模型使用情况</a></h3>
+<h4 id="ai"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#ai">AI 使用率总体情况</a></h4>
+<ol>
+<li>
+<p><strong>第一次作业：正确性 &lt;5%，性能 ≈0%</strong> 我在作业代码中基本没有使用大模型辅助生成代码。仅有 <code>toString()</code> 方法的多种输出情况的实现逻辑中，为了避免自己实现时对情况讨论的遗漏或错误，使用了大模型辅助生成了一小段判断逻辑。</p>
+</li>
+<li>
+<p><strong>第二次作业：正确性 10%，性能 10%</strong> 在第二次作业中，我依然自主设计了架构和实现了大部分的功能，但在一些细节的实现上、或者我不熟悉的部分，例如 <code>HashMap</code> 中 <code>equals()</code> 或者 <code>hashCode()</code> 方法的实现，我使用了大模型辅助生成代码来保证正确性和效率。</p>
+</li>
+<li>
+<p><strong>第三次作业：正确性 20%，性能 10%</strong> 在第三次作业中，我较为频繁地使用 Copilot 来辅助一些简单的方法和功能的实现，例如求导计算、递推函数等等。整体的架构仍然以我为主导进行设计，我也会适当咨询大模型来评估各种设计方案的优劣。</p>
+</li>
+</ol>
+<h4 id="_6"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_6">额外的大模型使用</a></h4>
+<p>评测机几乎全部由大模型完成。</p>
+<p>本博客内容中，对于 OO 度量与评估的部分，我也是通过大模型了解与分析的。其余基本为我自主撰写。</p>
+<h4 id="_7"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_7">大模型效果评估</a></h4>
+<p>我让大模型完成的任务都是相对独立、规模较小的功能实现，且我尽量提供了简洁、清晰的任务描述。在这类任务上大模型的表现较为理想。</p>
+<p>使用大模型编写评测机，由于输入的 prompt 较长，且题目的规范较为复杂，导致部分细节的合法性会出现问题，需要人工调整和修改才能得到正确的评测机代码。且大模型一般只能生成随机数据的评测机，对于一些特定的边界情况或者特殊情况的测试用例，仍然需要人工进行构造和设计。总体来说，大模型在评测机的编写上仍然是能够提供较大的帮助。</p>
+<p>如果让大模型直接生成符合规范的样例数据，效果并不理想，经常生成不合法的数据。</p>
+<h4 id="ai_1"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#ai_1">可能的互测发现的 AI 使用</a></h4>
+<p>第三次作业的“天权星”的 <code>PolyExpOptimizer</code> 类中使用了复杂的逻辑来进行 exp 的拆分分组提公因数优化，一个类代码长度接近 400 行。由于这个类的功能相对独立，且实现难度较大，因此我怀疑其可能是由大模型生成的。当然，如果这个类是人工编写的，那么我也非常佩服其设计能力和实现能力。</p>
+<h3 id="_8"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_8">七、本次作业心得体会</a></h3>
+<ol>
+<li><strong>面向对象的设计习惯仍需培养</strong>
+   虽然仿照第一次实验中的架构，我很自然地形成了递归下降的解析器和分层的表达式结构，但是在某些细节上仍然存在“面向过程”的痕迹，例如在 <code>Term.addFactor()</code> 中大量的 <code>instanceof</code> 判断和转型，导致了代码的臃肿和违背开闭原则。在这方面，我需要继续加强面向对象设计的意识，学会利用多态和抽象来减少条件分支，提高代码的可维护性和扩展性。</li>
+<li><strong>警惕“技术债”与容器选择的重要性</strong>
+   为了图快而在初期采用的偷懒方式（如暴力替换字符串、使用 <code>ArrayList</code> 遍历合并同类项）都在后续变成了难解的 BUG 甚至是 TLE 性能瓶颈。直到将多项式存储重构为 <code>HashMap</code>，并加入 <code>stringCache</code> 缓存机制，才彻底解决。这让我明白，写代码时不能只顾眼前，良好的数据结构和前瞻性设计远比临时工式的 trick 可靠。</li>
+<li><strong>直面“代码异味”，敬畏代码质量</strong>
+   OO 度量分析像一面镜子，照出了我那些塞满 <code>if-else</code> 的臃肿代码（如巨长的 <code>toString</code>）。尽管它们暂时没有报错，但我深刻感受到了这些“高复杂度炸弹”带来的维护压力。未来我还需要学习更多的架构手段，去化解这些臃肿的方法。</li>
+<li><strong>与大模型（AI）共驾的边界</strong>
+   在编写评测脚本和处理局部疑难细节上，大模型表现出了惊人的效率；但在核心架构搭建和复杂的化简算法上，人脑的系统级规划仍不可替代。AI 是极佳的副驾驶，但开发者必须亲自握稳方向盘。</li>
+</ol>
+<p>面向对象不仅是语法的堆砌，更是一种<strong>管理复杂度的艺术</strong>，期待在下一单元中能写出更加优雅的代码。</p>
+<h3 id="_9"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#_9">八、未来方向</a></h3>
+<p>第一单元的内容安排已经较为合理，难度也适中。三次作业的工作量还算均衡，第二次作业的迭代可能略微有些繁重。</p>
+<p>在课程的指导上，或许可以更多地结合具体任务的实现给出一些设计模式的建议，从而引导我们优化代码结构。</p>
+<hr />
+<h3 id="oo"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#oo">附录：OO 度量分析完整数据</a></h3>
+<h4 id="1-method-metrics"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#1-method-metrics">1. 方法级度量 (Method Metrics)</a></h4>
+<p><em>(指标说明：CogC=认知复杂度，ev(G)=基本圈复杂度，iv(G)=设计复杂度，v(G)=圈复杂度)</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方法 (Method)</th>
+<th style="text-align: left;">CogC</th>
+<th style="text-align: left;">ev(G)</th>
+<th style="text-align: left;">iv(G)</th>
+<th style="text-align: left;">v(G)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>MainClass.main(String[])</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MainClass.removeWhiteSpaces(String)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Expr.Expr()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Expr.add(Expr)</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Expr.addTerm(int, Term)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Expr.solve()</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.Term(int)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.addFactor(Factor)</code></td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.getTotalCoefficient()</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.getTotalExponentE()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.getTotalExponentX()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.getTotalExponentY()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.polyExpand()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.powerExpand()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term.solve()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.CallFunc.CallFunc(Factor, int)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.CallFunc.getExpr()</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.Derivative.Derivative(Expr, String)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.Derivative.derive()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.ExpoFunc.ExpoFunc(Factor, BigInteger)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.ExpoFunc.getExpTerm()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.ExprFactor.ExprFactor(Expr, BigInteger)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.ExprFactor.solve()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.PowerFunc.PowerFunc(BigInteger, String)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.PowerFunc.getExp()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.PowerFunc.getVar()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.SelFactor.SelFactor(Factor, Factor, Factor, Factor)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.SelFactor.getValue()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.SignedInteger.SignedInteger(BigInteger)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.SignedInteger.getNum()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.DefFunc.getDef()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.DefFunc.setDef(String)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.RecFunc.getDef(int)</code></td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.RecFunc.setDef(String, String, String)</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.Mono(BigInteger, BigInteger, BigInteger, Poly)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.Mono(MonoKey, BigInteger)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.coeff()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.derive(String)</code></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.exponent()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.getExpPart()</code></td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.getKey()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.getWeight()</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.multiply(Mono)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.negate()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.toString()</code></td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.xpower()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono.ypower()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey.MonoKey(BigInteger, BigInteger, Poly)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey.equals(Object)</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey.exponent()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey.hashCode()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey.xpower()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey.ypower()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.Poly()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.add(Poly)</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.addBrackets()</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.addMono(Mono)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.derive(String)</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.divide(BigInteger)</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.equals(Object)</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.getGcd()</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.hashCode()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.isZero()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.merge()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.multiply(Poly)</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.negate()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly.toString()</code></td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer.Lexer(String)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer.getNumber()</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer.getToken()</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer.next()</code></td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer.next(int)</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.Parser(Lexer)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.Parser(Lexer, Expr)</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseDefinedFunc()</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseDerivativeOrGrad()</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseExpr()</code></td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseFactor()</code></td>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseOptionalExponent()</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser.parseTerm()</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-class-metrics"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#2-class-metrics">2. 类级度量 (Class Metrics)</a></h4>
+<p><em>(指标说明：OCavg=平均方法复杂度，OCmax=最大方法复杂度，WMC=类总复杂度)</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类 (Class)</th>
+<th style="text-align: left;">OCavg</th>
+<th style="text-align: left;">OCmax</th>
+<th style="text-align: left;">WMC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>MainClass</code></td>
+<td style="text-align: left;">2.50</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Expr</code></td>
+<td style="text-align: left;">1.75</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.Term</code></td>
+<td style="text-align: left;">2.89</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">26</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.CallFunc</code></td>
+<td style="text-align: left;">1.50</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.Derivative</code></td>
+<td style="text-align: left;">1.00</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.ExpoFunc</code></td>
+<td style="text-align: left;">1.00</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.ExprFactor</code></td>
+<td style="text-align: left;">1.50</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.PowerFunc</code></td>
+<td style="text-align: left;">1.00</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.SelFactor</code></td>
+<td style="text-align: left;">1.50</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor.SignedInteger</code></td>
+<td style="text-align: left;">1.00</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.DefFunc</code></td>
+<td style="text-align: left;">1.00</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl.RecFunc</code></td>
+<td style="text-align: left;">4.00</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Mono</code></td>
+<td style="text-align: left;">3.15</td>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">41</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.MonoKey</code></td>
+<td style="text-align: left;">1.33</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly.Poly</code></td>
+<td style="text-align: left;">2.57</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">36</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Lexer</code></td>
+<td style="text-align: left;">2.40</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax.Parser</code></td>
+<td style="text-align: left;">3.75</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-package-metrics"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#3-package-metrics">3. 包级度量 (Package Metrics)</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">包名 (Package)</th>
+<th style="text-align: left;">平均圈复杂度 (v(G)avg)</th>
+<th style="text-align: left;">总圈复杂度 (v(G)tot)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>(默认包 Root)</em></td>
+<td style="text-align: left;">2.50</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr</code></td>
+<td style="text-align: left;">2.54</td>
+<td style="text-align: left;">33</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>expr.factor</code></td>
+<td style="text-align: left;">1.20</td>
+<td style="text-align: left;">18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>globl</code></td>
+<td style="text-align: left;">2.50</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>poly</code></td>
+<td style="text-align: left;">2.79</td>
+<td style="text-align: left;">92</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>syntax</code></td>
+<td style="text-align: left;">3.69</td>
+<td style="text-align: left;">48</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-project-metrics"><a class="toclink" href="../../2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#4-project-metrics">4. 项目级度量 (Project Metrics)</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">级别 (Level)</th>
+<th style="text-align: left;">名称 (Name)</th>
+<th style="text-align: left;">平均圈复杂度 (v(G)avg)</th>
+<th style="text-align: left;">总圈复杂度 (v(G)tot)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Project</td>
+<td style="text-align: left;"><code>project</code></td>
+<td style="text-align: left;">2.58</td>
+<td style="text-align: left;">206</td>
+</tr>
+</tbody>
+</table>
+    
+    
+  </div>
+</article>
       
         <article class="md-post md-post--excerpt">
   <header class="md-post__header">
