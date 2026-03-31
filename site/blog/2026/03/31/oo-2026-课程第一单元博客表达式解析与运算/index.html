@@ -61,6 +61,8 @@
     
       <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1913,6 +1915,8 @@
 <h4 id="4-globl">4) <code>globl</code> 函数定义<a class="headerlink" href="#4-globl" title="Permanent link">&para;</a></h4>
 <p>在本项目的实现中，函数定义的存储均采用字符串的形式。在解析函数调用时，直接将函数定义字符串传入 <code>Parser</code> 类中进行解析，<strong>复用同一套解析逻辑</strong>，实现函数实参的代入与解析。</p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/leostrange05/Images/image20260328112122200.png" /></p>
+<!-- more -->
+
 <h3 id="3">3. 设计度量与评估<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <h4 id="1_1">1) 核心度量指标<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
 <p><strong>注：完整数据请见附录</strong></p>
@@ -2273,7 +2277,7 @@
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        否则:
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>            return 非单个因子
 </span></code></pre></div></li>
-<li>对于 exp 指数函数的参数多项式，可以通过将 <code>exp((a*k*x+b*k*x^2+...))</code> 转化为 <code>exp((a*x+b*x^2+...))^k</code> 的形式来减少输出长度。为了减少可能的时间开销，在枚举 <code>k</code> 的值时，我将搜索的范围进行了限制：令 <code>g = gcd(多项式项的系数集合)</code>，则 <code>k</code> 的搜索范围为 $k \in {g/i | i \in {2,3,...,9}}$。可以证明，在这个范围内的 <code>k</code> 一定包含了所有能够使输出长度减少的 <code>k</code>。</li>
+<li>对于 exp 指数函数的参数多项式，可以通过将 <code>exp((a*k*x+b*k*x^2+...))</code> 转化为 <code>exp((a*x+b*x^2+...))^k</code> 的形式来减少输出长度。为了减少可能的时间开销，在枚举 <code>k</code> 的值时，我将搜索的范围进行了限制：令 <code>g = gcd(多项式项的系数集合)</code>，则 <code>k</code> 的搜索范围为 <span class="arithmatex">\(k \in \{g/i | i \in \{2,3,...,9\}\}\)</span>。可以证明，在这个范围内的 <code>k</code> 一定包含了所有能够使输出长度减少的 <code>k</code>。</li>
 </ul>
 <p>以上的优化保证输出结果正确，且对于代码的简洁性没有太大的影响。我没有采用过于复杂的将一个 exp 指数函数分组拆分后提取公因数的优化，虽然这种优化在某些特定的表达式下能够进一步减少输出长度，但其实现较为复杂，且极易增加时间开销。</p>
 <h2 id="_5">六、大模型使用情况<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
@@ -3087,7 +3091,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2026年3月31日 06:04:18 UTC"><span class="timeago" datetime="2026-03-31T06:04:18+00:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026年3月31日 06:04:18 UTC">2026-03-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2026年3月31日 06:06:56 UTC"><span class="timeago" datetime="2026-03-31T06:06:56+00:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026年3月31日 06:06:56 UTC">2026-03-31</span>
   </span>
 
     
@@ -3254,6 +3258,12 @@
         <script src="../../../../../js/timeago.min.js"></script>
       
         <script src="../../../../../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../../../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

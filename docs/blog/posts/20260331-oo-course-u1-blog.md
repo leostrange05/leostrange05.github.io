@@ -70,6 +70,8 @@ src/
 
 ![](https://cdn.jsdelivr.net/gh/leostrange05/Images/image20260328112122200.png)
 
+<!-- more -->
+
 ### 3. 设计度量与评估
 
 #### 1) 核心度量指标
