@@ -1526,11 +1526,6 @@
 <p>此模块表示了语法树的各个组成部分。核心类 <code>Expr</code>、<code>Term</code> 和 <code>Factor</code> 分别代表表达式、项和因子，形成了表达式的层次结构。<code>factor</code> 包下的具体实现类则对应不同类型的因子，根据不同因子的含义实现相应的计算逻辑。本模块<strong>基本不实现算术运算</strong>，仅负责表达式的结构化表示和基础的转化与化简，表达式的相乘括号展开也是通过调用 <code>Poly</code> 的运算方法来完成。</p>
 <p>对于向多项式的转换，在 <code>Expr</code> 和 <code>Term</code> 类中均有 <code>solve()</code> 方法，负责将当前表达式/项转换为多项式对象。<code>Term</code> 类中的 <code>solve()</code> 方法将本项中包含的所有因子分类汇总，针对不同类型的因子进行不同的转化：常数和幂函数直接转换，其他类型的因子则进一步递归转换，例如表达式因子幂次的展开、选择式因子的选择求值等。</p>
 <h5 id="3-poly"><a class="toclink" href="2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#3-poly">3) <code>poly</code> 多项式计算</a></h5>
-<p>多项式 <code>Poly</code> 类最终采用一个 <code>HashMap&lt;MonoKey, BigInteger&gt;</code> 的容器来存储多项式中的单项式列表。HashMap 可以高效地实现<strong>同类项的合并与查找</strong>，且对于等价的多项式能够方便、快速地进行比较。加法、相反数、乘法等算术运算均有实现；同时编写了 <code>toString()</code> 方法，得到最终的输出结果。</p>
-<p>考虑到运算功能需要尽量与 <code>expr</code> 模块分离，求导的运算在此模块中实现。相比于在 <code>expr</code> 模块中直接实现求导功能，在 <code>poly</code> 模块中实现求导可以更好地利用多项式的结构特性，简化求导的实现逻辑，并且使得求导的结果能够直接以多项式的形式进行后续的运算和输出。</p>
-<h5 id="4-globl"><a class="toclink" href="2026/03/31/oo-2026-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E5%8D%95%E5%85%83%E5%8D%9A%E5%AE%A2%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%BF%90%E7%AE%97/#4-globl">4) <code>globl</code> 函数定义</a></h5>
-<p>在本项目的实现中，函数定义的存储均采用字符串的形式。在解析函数调用时，直接将函数定义字符串传入 <code>Parser</code> 类中进行解析，<strong>复用同一套解析逻辑</strong>，实现函数实参的代入与解析。</p>
-<p><img alt="" src="https://cdn.jsdelivr.net/gh/leostrange05/Images/image20260328112122200.png" /></p>
 
     
       <nav class="md-post__action">
