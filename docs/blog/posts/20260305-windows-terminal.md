@@ -7,7 +7,7 @@ tags:
     - Windows
 ---
 
-# 在 Windows 上便捷地打开终端
+# 在 Windows 上便捷地打开终端 Terminal
 
 ### 2026-03-11 更新
 
