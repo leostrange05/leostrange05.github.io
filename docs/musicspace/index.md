@@ -1,8 +1,8 @@
 # 欢迎来到音乐空间
 
-我的品味很杂，涵盖多种音乐类型，而且经常会变化，欢迎随时来访。
+分享我喜欢的音乐。
 
-这里也可能会有一些游戏、电影、书籍等相关内容的分享，敬请期待。
+这里也可能会有一些游戏、电影、书籍等相关内容，敬请期待。
 
 !!! warning "网络访问"
     在这里，[:material-spotify: Spotify](https://open.spotify.com/) 将是主要的音乐播放器。你可能需要进行科学的网络加速才能访问 Spotify 的服务。 
@@ -20,10 +20,15 @@
 
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4qsESiC3wgGj1kXJTdICF2?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+<!--
 > 春天的花开秋天的风以及冬天的落阳  
 > 忧郁的青春年少的我曾经无知的这么想  
 > 风车在四季轮回的歌里它天天的流转  
 > 风花雪月的诗句里我在年年的成长  
+{: .lyrics }
+-->
+
+> ![](story.jpg)
 {: .lyrics }
 
 ---
