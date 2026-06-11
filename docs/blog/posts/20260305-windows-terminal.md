@@ -9,6 +9,12 @@ tags:
 
 # 在 Windows 上便捷地打开终端 Terminal
 
+### 2026-05-11 更新
+
+似乎找到了非管理员模式下终端抽风的原因。北航云盘的 Windows 客户端 (AISHU Sync Disk) 会有 **dll 注入**，导致终端抽风。卸载这个客户端后，目前没有出问题。
+
+参考：(Windows Terminal 崩溃问题分析与解决方案：第三方软件注入导致的兼容性问题)[https://blog.gitcode.com/4e2ffd3dc2c9ed6fba211e9b1d1c3f09.html]
+
 ### 2026-03-11 更新
 
 发现了 Quicker 这个工具，可以设置快捷键来打开 Windows 终端，速度非常快。**甚至，它可以非常方便地探测到打开的文件夹，并从该文件夹所在位置打开终端**。相比之前的方案，这个工具更简单易用。工具的链接在[此处](https://getquicker.net/Sharedaction?code=95499ce4-bc30-4933-0c7d-08dbf467792d)。

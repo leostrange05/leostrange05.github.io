@@ -8,8 +8,11 @@ nav:
     - 导览: blog/index.md
     - 标签汇总: blog/tags.md
 
-  - 🎵 音乐空间:
-    - 导览: musicspace/index.md
+  - 🗒️ 生活随记:
+    - 导览: lifediary/index.md
+
+  # - 🎵 音乐空间:
+  #   - 导览: musicspace/index.md
 
   - 🔗 网上邻居:
     - 网上邻居: friends.md
@@ -84,6 +87,11 @@ plugins:
     
   - blog:
       blog_dir: blog
+      blog_toc: true
+      post_readtime: false
+
+  - blog:
+      blog_dir: lifediary
       blog_toc: true
       post_readtime: false
 

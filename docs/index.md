@@ -14,13 +14,21 @@ hide:
 
     [:octicons-arrow-right-24: 开始阅读](blog/index.md)
 
--  :musical_note: __音乐空间__
+-  :notepad_spiral: __生活随记__
+
+    ---
+
+    记录我的日常生活、吃喝玩乐、思考体会等内容，分享我的生活点滴。
+
+    [:octicons-arrow-right-24: 加载内容](lifediary/index.md)
+
+<!-- -  :musical_note: __音乐空间__
 
     ---
 
     分享我喜欢的音乐，也可能会有游戏、电影、书籍等相关内容的分享。
 
-    [:octicons-arrow-right-24: 探索空间](musicspace/index.md)
+    [:octicons-arrow-right-24: 探索空间](musicspace/index.md) -->
 
 -   :link: __网上邻居__
 
